@@ -67,6 +67,11 @@ header nav ul li a {
     font-size: 1.55vw;
 }
 
+.about-me img {
+    height: 200px;
+    width: 200px
+}
+
 /* UTILITY CSS*/
 .flex-row {
     display: flex;
@@ -85,6 +90,8 @@ header nav ul li a {
 }
 
 .content {
+    display: flex;
+    flex-wrap: wrap;
     width: 60%;
 }
 
@@ -110,21 +117,35 @@ header nav ul li a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
+    width: 60%;
 }
-
+/*
 .projects h2 {
     flex: 1 30%;
-}
+}*/
 
 .project {
     align-items: center;
-    border: var(--title-background-color)
+    border: var(--title-background-color);
+    /*min-height: 150px;
+    max-height: 150px;
+    display: flex; 
+    flex-basis: calc(50% - 1em);*/
+}
+
+.project:first-child {
+    min-height: 400px;
+    flex-basis: 100%;
 }
 
 .project-title {
     background-color: var(--title-background-color);
 
+}
+
+.app-img {
+    width: 600px;
+    height: 400px;
 }
 
 /* CONTACT-INFO CSS */

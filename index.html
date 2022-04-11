@@ -3,135 +3,112 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./Assets/CSS/style.css">
-    <title>My Portfolio</title> <!-- Placeholder name, think of something better -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <title></title> <!-- Placeholder name, think of something better -->
 </head>
 
 <body>
     <!-- Header -->
-    <header>
-        <h1>Matt Danielson</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about-me">About Me</a>
-                </li>
-                <li>
-                    <a href="#work">Work</a>
-                </li>
-                <li>
-                    <a href="#contact-info">Contact Me</a>
-                </li>
-                <li>
-                    <a href="#resume">Resume</a>
-                </li>
-            </ul>
-        </nav>
+    <header class="">
+        <div class="col-12 text-center">
+            <h1 class="text-dark">Matt Danielson</h1>
+        </div>
+        <div class="py-1 mb-2 align-items-center">
+            <nav class="nav align-items-center justify-content-between">
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-me">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-info">Contact Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section class="hero"></section>
-
     <!-- Main -->
-    <main>
+    <main class="container">
 
         <!-- about me -->
-        <section id="about-me" class="about-me">
-            <div class="flex-row">
-                <h2 class="section-title">About <br>Me</h2>
+        <section id="about-me" class="">
+            <div class="row col-12 text-center">
+                <h2 class="text-dark">About Me</h2><br>
             </div>
-            <p class="content">
-                I recently entered the world of software development by enrolling in the University of Minnesota's
-                coding bootcamp.
-            </p>
-            <img src="./Assets/images/Headshot.jpg" at="Matt Danielson" class="content"/>
+
+            <div class="row col-12 text-center">
+                <img src="./assets/images/Headshot.jpg" at="Matt Danielson" style="width: 200px; height: 250px;" class="rounded float-left"/>
+                <p >
+                    I recently entered the world of software development by enrolling in the University of Minnesota's
+                    coding bootcamp.
+                </p>
+            </div>
         </section>
 
         <!-- projects -->
         <section id="projects" class="projects">
-            <div class="flex-row">
-                <h2 class="section-title">Work</h2>
+            <div class="row col-12 text-center">
+                <h2 class="text-dark">Work</h2>
             </div>
-            <div class="content">
-                <div class="project">
-                    <a href="https://acheronandstyx.github.io/run-buddy/" target="_blank">
-                        <img src="Assets\images\RBbanner.PNG" alt="Run Buddy Application" class="app-img">
-                    </a>
-                    <div>
-                        <h3 class="project-title">Run Buddy</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card fled-md-row mb-4 box-shadow">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <a class="d-inline-block mb-2 text-primary" href="https://acheronandstyx.github.io/find-a-flick/" target="_blank">find-a-flick</a>
+                            <p class="card-text mb-auto">find-a-flick, for when you know what to watch but not where.</p>
+                        </div>
+                        <img class="card-img-right flex-auto d-none d-md-block" data-src="assets\images\find-a-flick.JPG" style="width: 200px; height: 250px;" src="assets\images\find-a-flick.JPG" alt="find-a-flick a finder for movie and tv streaming options based on title">
                     </div>
                 </div>
-                <div class="project">
-
-                    <a href="https://acheronandstyx.github.io/find-a-flick/" target="_blank">
-                        <img src="Assets\images\find-a-flick.JPG" alt="find-a-flick a finder for movie and tv streaming options based on title" class="app-img">
-                    </a>
-                    <div>
-                        <h3 class="project-title">find-a-flick</h3>
+                <div class="col-md-6">
+                    <div class="card fled-md-row mb-4 box-shadow">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <a class="d-inline-block mb-2 text-primary" href="https://young-atoll-21457.herokuapp.com/" target="_blank">fullStack Jack</a>
+                            <p class="card-text mb-auto">An application to showa user the basics of black jack.</p>
+                        </div>
+                        <img class="card-img-right flex-auto d-none d-md-block" data-src="assets\images\find-a-flick.JPG" style="width: 200px; height: 250px;" src="" alt="fullStack jack an application to showa user the basics of black jack.">
                     </div>
                 </div>
-
-                <!-- FILLER NEEDS EDITING ADD SOME GOOD CHALLENGES 
-                <div class="project">
-                    <a href="#work">
-                        <img src="Assets\images\CalcBanner.jpg" alt="Calculator Application">
-                    </a>
-                    <div>
-                        <h3 class="project-title">Calculator</h3>
-                    </div>
-
-                </div>
-                <div class="project">
-                    <a href="#work">
-                        <img src="Assets\images\passwordBanner.jpg" alt="Password Generator Application">
-                    </a>
-                    <div>
-                        <h3 class="project-title">Password Generator</h3>
-                    </div>
-                </div>
-                <div class="project">
-                    <a href="#work">
-                        <img src="Assets\images\Weahterbanner.png" alt="Weather Dashboard Application">
-                    </a>
-                    <div>
-                        <h3 class="project-title">Weather Dashboard</h3>
-                    </div>
-                </div>
-                <div class="project">
-                    <a href="#work">
-                        <img src="Assets\images\schedulerBanner.jpeg" alt="Work Day Scheduler Application">
-                    </a>
-                    <div>
-                        <h3 class="project-title">Work Day Scheduler</h3>
-                    </div>
-                </div> -->
             </div>
-
         </section>
 
         <!-- contact info -->
-        <section id="contact-info" class="contact-info">
-            <div class="flex-row">
-                <h2 class="section-title">Contact <br>Me</h2>
+        <section id="contact-info" class="">
+            <div class="row col-12 text-center">
+                <h2 class="text-dark">Contact Me</h2>
             </div>
-            <ul class="content">
-                <li>
-                    555-555-5555
-                </li>
-                <li>
-                    mmdanielson7@gmail.com
-                </li>
-                <li>
-                    <a href="https://github.com/AcheronandStyx">Github</a>
-                </li>
-            </ul>
+            <div class="row align-items-center justify-content-between">
+                <ul class="">
+                    <li>
+                        <P>555-555-5555</P>
+                    </li>
+                    <li>
+                        <p>
+                            mmdanielson7@gmail.com
+                        </p>
+                    </li>
+                    <li>
+                        <a href="https://github.com/AcheronandStyx" target="_blank">Github</a>
+                    </li>
+                </ul>
+            </div>
         </section>
 
-
+        <!-- Fix up and add later
         <section id="resume" class="resume">
             <div class="flex-row">
                 <h1 class="section-title">Resume</h1>
             </div>
-        </section>
+        </section>-->
 
     </main>
 
